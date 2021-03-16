@@ -1,6 +1,7 @@
 # This are the exercises
 
 In **markdown** *notation.*
+Test
 
 ### Week 1
 Links to exercises:
