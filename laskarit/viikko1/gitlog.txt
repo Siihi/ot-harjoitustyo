@@ -1,0 +1,105 @@
+commit d5a716429ed476e7b1599283351efc72323e80b6
+Author: Siiri <siiri.i.hirvonen@gmail.com>
+Date:   Tue Mar 16 16:39:56 2021 +0200
+
+    harjoitus
+
+ tiedostoja/file2.txt                 | 0
+ tiedostoja/{file1.txt => file22.txt} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 4f49b7ad373f6fdc1de9b97995bf0e1eed064e2d
+Author: Siiri <siiri.i.hirvonen@gmail.com>
+Date:   Tue Mar 16 16:36:31 2021 +0200
+
+    uudet tiedostot
+
+ tiedostoja/file1.txt | 0
+ tiedostoja/file2.txt | 0
+ tiedostoja/file3.txt | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 697457aaa715d9d95bcfd4db5df361a7c2d1cf86
+Author: Siiri <siiri.i.hirvonen@gmail.com>
+Date:   Tue Mar 16 16:33:14 2021 +0200
+
+    kokeilu
+
+ eka.txt    | 3 ++-
+ kolmas.txt | 3 ++-
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+
+commit 104b4578114ae4f18bf966d762eafcb13c95a520
+Author: Siiri <siiri.i.hirvonen@gmail.com>
+Date:   Tue Mar 16 16:30:57 2021 +0200
+
+    nimi muutettu
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ce0a863acb0a7411081014aa5d07217462d2079b
+Author: Siiri <siiri.i.hirvonen@gmail.com>
+Date:   Tue Mar 16 16:29:37 2021 +0200
+
+    toinen.txt poistettu
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit e98cbabfd815e4e5b82462ab7a1dcab796a05c35
+Author: Siiri <siiri.i.hirvonen@gmail.com>
+Date:   Tue Mar 16 16:27:58 2021 +0200
+
+    tiedosto.txt muokattu taas
+
+ tiedosto.txt | 22 ++++++++++++++--------
+ 1 file changed, 14 insertions(+), 8 deletions(-)
+
+commit 880e4bbfcfa093f86d32637affd372d8c11753c2
+Author: Siiri <siiri.i.hirvonen@gmail.com>
+Date:   Tue Mar 16 16:26:25 2021 +0200
+
+    tiedosto.txt muokattu
+
+ tiedosto.txt | 20 ++++++++++++++++++++
+ 1 file changed, 20 insertions(+)
+
+commit 4ede180347f1e859646c3496ec4cafe17629be08
+Author: Siiri <siiri.i.hirvonen@gmail.com>
+Date:   Tue Mar 16 14:47:54 2021 +0200
+
+    testi valmis
+
+ kolmas.txt      | 1 +
+ stuff/testi.txt | 0
+ toinen.txt      | 1 +
+ 3 files changed, 2 insertions(+)
+
+commit 9a6456efd94d8caa4392e862209d1cca83a12dbb
+Author: Siiri <siiri.i.hirvonen@gmail.com>
+Date:   Tue Mar 16 14:46:02 2021 +0200
+
+    uusi tiedosto
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ee1ec61d33abc7831cd05b4e79c108659f60381e
+Author: Siiri <siiri.i.hirvonen@gmail.com>
+Date:   Tue Mar 16 14:43:44 2021 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 2 ++
+ toinen.txt   | 0
+ 2 files changed, 2 insertions(+)
+
+commit 6fad45dd384b36f2b86fd08fdcfd70cf6abef6b6
+Author: Siiri <siiri.i.hirvonen@gmail.com>
+Date:   Mon Mar 15 21:38:54 2021 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
