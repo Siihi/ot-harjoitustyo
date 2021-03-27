@@ -1,9 +1,9 @@
-# This are the exercises
+# Budjetointisovellus
 
-In **markdown** *notation.*
-Test
+## Dokumentaatio
+* [Vaatimusmäärittely](https://github.com/Siihi/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
-### Week 1
-Links to exercises:
+### Viikko 1
+Linkit harjoituksiin:
 * [komentorivi.txt](https://github.com/Siihi/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 * [gitlog.txt](https://github.com/Siihi/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
