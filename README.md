@@ -2,6 +2,7 @@
 
 ## Dokumentaatio
 * [Vaatimusmäärittely](https://github.com/Siihi/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+* [Tuntikirjanpito](https://github.com/Siihi/ot-harjoitustyo/blob/master/tuntikirjanpito.md)
 
 ### Viikko 1
 Linkit harjoituksiin:
