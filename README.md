@@ -1,7 +1,6 @@
 # Budjetointisovellus
 
-Sovelluksen avulla käyttäjät voivat tutkia menneitä tilitapahtumiaan ja katsoa >
-Sovellusta voi käyttää useampi käyttäjä, joilla kaikilla näkyy vain omat tilita>
+Sovelluksen avulla käyttäjät voivat tutkia menneitä tilitapahtumiaan ja katsoa kuinka paljon rahaa on mennyt mihinkin tarkoitukseen. Sovellusta voi käyttää useampi käyttäjä, joilla kaikilla näkyy vain omat tilitapahtumansa.
 
 ## Huomio Python-versiosta
 
