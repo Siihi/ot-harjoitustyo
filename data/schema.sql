@@ -1,16 +1,16 @@
 CREATE TABLE Users
 (
-    id TEXT PRIMARY KEY,
+    id INTEGER PRIMARY KEY,
     username TEXT,
     password TEXT
 );
 
 CREATE TABLE Accounts
 (
-    id TEXT PRIMARY KEY,
+    id INTEGER PRIMARY KEY,
     user_id INTEGER REFERENCES Users,
     date DATE,
-    amount INT,
+    amount INTEGER,
     account TEXT,
     name TEXT,
     currency TEXT
