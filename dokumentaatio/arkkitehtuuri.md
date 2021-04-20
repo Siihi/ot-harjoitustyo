@@ -1,0 +1,1 @@
+![Luokkarakenne](./kuvat/luokkakaavio.jpg
