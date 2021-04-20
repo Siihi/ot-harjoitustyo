@@ -68,7 +68,7 @@ class Database_Interactions:
                 for info in edit:
                     info.strip()
                 Db.execute("""
-                            INSERT INTO Accounts (UserId, date, amount, account, name, currency) 
+                            INSERT INTO Accounts (User_id, date, amount, account, name, currency) 
                             VALUES (?,?,?,?,?,?)
                             """, [UserId, edit[0], edit[1], edit[2], edit[5], edit[8]])
         print("Onnistui!")
