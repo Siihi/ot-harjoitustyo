@@ -10,6 +10,7 @@ Sovelluksen toiminta on testattu Python-versiolla `3.6.0`.
 
 * [Vaatimusmäärittely](https://github.com/Siihi/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 * [Tuntikirjanpito](https://github.com/Siihi/ot-harjoitustyo/blob/master/tuntikirjanpito.md)
+* [Arkkitehtuurikuvaus](https://github.com/Siihi/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
 ## Asennus
 
