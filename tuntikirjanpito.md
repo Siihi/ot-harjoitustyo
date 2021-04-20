@@ -11,3 +11,4 @@
 | 19.4 | 5 | Kaikkien ja kuukausittaisten menojen ja tulojen näyttäminen |
 |  | 1 | Pylintin käyttöön otto ja koodin siistiminen |
 |  | 1 | Lisätestien luominen |
+| yht | 17 |  |
