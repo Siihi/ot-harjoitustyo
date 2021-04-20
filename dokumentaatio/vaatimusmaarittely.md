@@ -8,13 +8,13 @@ Sovellusta voi käyttää useampi käyttäjä, joilla kaikilla näkyy vain omat 
 ## Perusversion tarjoama toiminnallisuus
 
 ### Ennen kirjautumista
-- Käyttäjä voi luoda käyttäjätunnuksen
-- Käyttäjä voi kirjautua järjestelmään olemassaolevalla käyttäjätunnuksella ja salasanalla
+- Käyttäjä voi luoda käyttäjätunnuksen [x]
+- Käyttäjä voi kirjautua järjestelmään olemassaolevalla käyttäjätunnuksella ja salasanalla [x]
 
 ### Kirjautumisen jälkeen
 
-- Käyttäjä voi syöttää järjestelmään omat tilitapahtumansa csv-tiedoston avulla
-- Käyttäjä näkee paljonko rahaa hän on saanut ja käyttänyt viime kuukaudessa/vuodessa
+- Käyttäjä voi syöttää järjestelmään omat tilitapahtumansa csv-tiedoston avulla [x]
+- Käyttäjä näkee paljonko rahaa hän on saanut ja käyttänyt viime kuukaudessa/vuodessa [x]
 - Käyttäjä näkee paljonko rahaa hänelle on jäänyt yli kuukaudessa
 - Käyttäjä voi kirjautua ulos järjestelmästä
 
@@ -23,8 +23,8 @@ Sovellusta voi käyttää useampi käyttäjä, joilla kaikilla näkyy vain omat 
 - Säästöjen, eli paljonko rahaa pitäisi ainakin olla tilillä, näyttäminen ja muokkaaminen
 - Käteisen lisäämisen ja sillä ostamisen lisääminen tilitapahtumiin
 - Kategorioiden luominen ja tapahtumien lajitteleminen
-- Kaikkien kuukauden tapahtumien näkyminen listassa
+- Kaikkien kuukauden tapahtumien näkyminen listassa [x]
 - Tapahtumien piilotus tilastoista
 - Suunnitelmien luominen seuraavalle kuukaudelle aikaisempien tilastojen perusteella
 - Käyttäjätiimit, jotka näkevät yhteiset budjetit
-- Käyttäjätunnuksen poisto
+- Käyttäjätunnuksen poisto [x]
