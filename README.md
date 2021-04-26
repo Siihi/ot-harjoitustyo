@@ -44,7 +44,7 @@ poetry run invoke start
 Ohjelman pystyy suorittamaan komennolla:
 
 ```bash
-poetry invoke start
+poetry run invoke start
 ```
 
 ### Testaus
