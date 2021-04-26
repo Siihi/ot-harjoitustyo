@@ -12,4 +12,6 @@
 |  | 1 | Pylintin käyttöön otto ja koodin siistiminen |
 |  | 1 | Lisätestien luominen |
 | 24.4. | 2 | Testien luominen |
-| yht | 17 |  |
+| 25.4. | 3 | Käteisostot ja käteisen lisääminen |
+|  | 1 | TkInteriin tutustuminen ja graafisen käyttöliittymän aloittaminen |
+| yht | 23 |  |
