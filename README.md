@@ -2,6 +2,10 @@
 
 Sovelluksen avulla käyttäjät voivat tutkia menneitä tilitapahtumiaan ja katsoa kuinka paljon rahaa on mennyt mihinkin tarkoitukseen. Sovellusta voi käyttää useampi käyttäjä, joilla kaikilla näkyy vain omat tilitapahtumansa.
 
+## Uusin release
+
+[Release](https://github.com/Siihi/ot-harjoitustyo/releases/tag/viikko5)
+
 ## Huomio Python-versiosta
 
 Sovelluksen toiminta on testattu Python-versiolla `3.6.0`.
