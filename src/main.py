@@ -21,8 +21,12 @@ class Service:
         print("Jos haluat nähdä kaikki tietosi, paina 2")
         print("Jos haluat nähdä kaikki tulot, paina 3")
         print("Jos haluat nähdä kaikki menot, paina 4")
-        print("Jos haluat nähdä kuukauden tulot, paina 5")
-        print("Jos haluat nähdä kuukauden menot, paina 6")
+        print("Jos haluat nähdä kaikki tulot ja menot yhteensä, paina 5")
+        print("Jos haluat nähdä kuukauden tulot, paina 6")
+        print("Jos haluat nähdä kuukauden menot, paina 7")
+        print("Jos haluat nähdä kuukauden tulot ja menot yhteensä, paina 8")
+        print("Jos haluat lisätä käteistä, paina 9")
+        print("Jos haluat lisätä käteisoston, paina 10")
         print("Jos haluat poistua, paina 0")
         self.choices()
 
@@ -52,9 +56,17 @@ class Service:
             elif choice == 4:
                 self.fetchexpensesofalltime()
             elif choice == 5:
-                self.fetchincomeofmonth()
+                self.fetchallofalltime()
             elif choice == 6:
+                self.fetchincomeofmonth()
+            elif choice == 7:
                 self.fetchexpensesofmonth()
+            elif choice == 8:
+                self.fetchallofmonth()
+            elif choice == 9:
+                self.addcash()
+            elif choice == 10:
+                self.addcashpurchase()
             elif choice == 0:
                 break
             else:
@@ -106,24 +118,56 @@ class Service:
         name = input("Anna tiedoston nimi:")
         Db.addinfofromfile(self.UserId, name)
 
+    def addcash(self):
+        cash = input("Käteisen määrä (muodossa 0,00):")
+        Db.addcash(self.UserId, cash)
+
+    def addcashpurchase(self):
+        cash = input("Oston määrä (muodossa -0,00):")
+        shop = input("Kauppa:")
+        date = input("Päivä (muodossa 30.09.2000):")
+        Db.addcashpurchase(self.UserId, cash, shop, date)
+
     def fetchallinfos(self):
         Db.fetchallinfo(self.UserId)
 
     def fetchincomeofalltime(self):
-        Db.fetchincomeofalltime(self.UserId)
+        print(Db.fetchincomeofalltime(self.UserId))
 
     def fetchexpensesofalltime(self):
-        Db.fetchexpensesofalltime(self.UserId)
+        print(Db.fetchexpensesofalltime(self.UserId))
+
+    def fetchallofalltime(self):
+        income = Db.fetchincomeofalltime(self.UserId)
+        expenses = Db.fetchexpensesofalltime(self.UserId)
+        print(income+expenses)
 
     def fetchincomeofmonth(self):
         year = input("Anna vuosi:")
         month = input("Anna kuukausi:")
-        Db.fetchincomeofmonth(self.UserId, month, year)
+        print(Db.fetchincomeofmonth(self.UserId, month, year))
 
     def fetchexpensesofmonth(self):
         year = input("Anna vuosi:")
         month = input("Anna kuukausi:")
-        Db.fetchexpensesofmonth(self.UserId, month, year)
+        print(Db.fetchexpensesofmonth(self.UserId, month, year))
+
+    def fetchallofmonth(self):
+        year = input("Anna vuosi:")
+        month = input("Anna kuukausi:")
+        income = Db.fetchincomeofmonth(self.UserId, month, year)
+        expenses = Db.fetchexpensesofmonth(self.UserId, month, year)
+        print(income+expenses)
+
+    #def fetchallfromcategory(self):
+
+    #def addstoretocategory(self):
+
+    #def fetchallfromcategorymonth(self):
+
+    
+
+
 
 if __name__ == "__main__":
     X = Service()

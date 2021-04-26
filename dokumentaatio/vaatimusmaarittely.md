@@ -15,13 +15,13 @@ Sovellusta voi käyttää useampi käyttäjä, joilla kaikilla näkyy vain omat 
 
 - Käyttäjä voi syöttää järjestelmään omat tilitapahtumansa csv-tiedoston avulla [x]
 - Käyttäjä näkee paljonko rahaa hän on saanut ja käyttänyt viime kuukaudessa/vuodessa [x]
-- Käyttäjä näkee paljonko rahaa hänelle on jäänyt yli kuukaudessa
+- Käyttäjä näkee paljonko rahaa hänelle on jäänyt yli kuukaudessa [x]
 - Käyttäjä voi kirjautua ulos järjestelmästä
 
 ## Jatkokehitysideoita
 
 - Säästöjen, eli paljonko rahaa pitäisi ainakin olla tilillä, näyttäminen ja muokkaaminen
-- Käteisen lisäämisen ja sillä ostamisen lisääminen tilitapahtumiin
+- Käteisen lisäämisen ja sillä ostamisen lisääminen tilitapahtumiin [x]
 - Kategorioiden luominen ja tapahtumien lajitteleminen
 - Kaikkien kuukauden tapahtumien näkyminen listassa [x]
 - Tapahtumien piilotus tilastoista

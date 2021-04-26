@@ -2,8 +2,8 @@ from database_connection import get_database_connection
 
 def create_tables(connection):
     cursor = connection.cursor()
-    cursor.execute("CREATE TABLE Users (id TEXT PRIMARY KEY, username TEXT, password TEXT);")
-    cursor.execute("CREATE TABLE Accounts (id TEXT PRIMARY KEY, user_id INTEGER REFERENCES Users, date DATE, amount INT, account TEXT, name TEXT, currency TEXT);")
+    cursor.execute("CREATE TABLE Users (id INTEGER PRIMARY KEY, username TEXT, password TEXT);")
+    cursor.execute("CREATE TABLE Accounts (id INTEGER PRIMARY KEY, user_id INTEGER REFERENCES Users, date DATE, amount INT, account TEXT, name TEXT, currency TEXT);")
 
 def drop_tables(connection):
     cursor = connection.cursor()
