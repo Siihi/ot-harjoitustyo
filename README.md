@@ -4,7 +4,7 @@ Sovelluksen avulla käyttäjät voivat tutkia menneitä tilitapahtumiaan ja kats
 
 ## Uusin release
 
-[Release](https://github.com/Siihi/ot-harjoitustyo/releases/tag/viikko5)
+[Release](https://github.com/Siihi/ot-harjoitustyo/releases/tag/viikko6)
 
 ## Huomio Python-versiosta
 
