@@ -59,8 +59,7 @@ class Database_Interactions:
         try:
             open(new_path, "r")
         except FileNotFoundError:
-            print("Tiedostoa ei löytynyt")
-            return
+            return False
         with open(new_path, "r") as file1:
             for line in file1:
                 edit = line.split(";")
@@ -75,7 +74,6 @@ class Database_Interactions:
                             INSERT INTO Accounts (User_id, date, amount, account, name, currency) 
                             VALUES (?,?,?,?,?,?)
                             """, [UserId, date, edit[1], edit[2], edit[5], edit[8]])
-        print("Onnistui!")
         return True
 
     def addcash(self, UserId, cash):
@@ -83,39 +81,48 @@ class Database_Interactions:
         date = date.date()
         currency = "EUR"
         if "," not in cash:
-            print("Rahamäärä kirjoitettu väärin")
-            return
+            return False
+        try:
+            trial = cash.replace(",", "")
+            int(trial)
+        except:
+            return False
         Db.execute("""
                     INSERT INTO Accounts (User_id, date, amount, currency) 
                     VALUES (?,?,?,?)
                     """, [UserId, date, cash, currency])
-        print("Onnistui!")
         return True
 
     def addcashpurchase(self, UserId, cash, shop, date):
         currency = "EUR"
         if "," not in cash or "-" not in cash:
-            print("Rahamäärä kirjoitettu väärin")
-            return
+            return False
+        try:
+            trial = cash.replace(",", "")
+            trial = trial.replace("-", "")
+            int(trial)
+        except:
+            return False
         date = datetime.datetime.strptime(date, "%d.%m.%Y")
         date = date.date()
         Db.execute("""
                     INSERT INTO Accounts (User_id, date, amount, name, currency)
                     VALUES (?,?,?,?,?)
                     """, [UserId, date, cash, shop, currency])
-        print("Onnistui!")
         return True
 
     def fetchallinfo(self, UserId):
+        infolist = []
         info = Db.execute("""
                             SELECT date, amount, account, name, currency
                             FROM Accounts 
                             WHERE user_id = ? 
                             ORDER BY date ASC
                             """, [UserId]).fetchall()
-        for line in info:
-            print(f"{line[0]} | {line[1]} | {line[2]} | {line[3]} | {line[4]}")
-        return True
+        for row in info:
+            obj = (row[0], row[1], row[2], row[3], row[4])
+            infolist.append(obj)
+        return infolist
 
     def fetchincomeofalltime(self, UserId):
         Sum = 0
@@ -153,8 +160,6 @@ class Database_Interactions:
 
     def fetchincomeofmonth(self, UserId, month, year):
         Sum = 0
-        if len(month) == 1:
-            month = "0" + month
         date = year + "-" + month + "%"
         info = Db.execute("""
                             SELECT amount 
@@ -173,8 +178,6 @@ class Database_Interactions:
 
     def fetchexpensesofmonth(self, UserId, month, year):
         Sum = 0
-        if len(month) == 1:
-            month = "0" + month
         date = year + "-" + month + "%"
         info = Db.execute("""
                             SELECT amount 
@@ -190,3 +193,6 @@ class Database_Interactions:
             else:
                 continue
         return Sum/100
+
+user = User()
+db = Database_Interactions()

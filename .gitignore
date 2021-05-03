@@ -4,4 +4,5 @@ htmlcov
 .pytest_cache
 /src/__pycache__
 /src/tests/__pycache__
+/src/ui/__pycache__
 .coverage
