@@ -18,4 +18,6 @@
 | 2.5. | 5 | Graafisen käyttöliittymän koodaaminen |
 |  | 1 | Uloskirjautuminen |
 |  | 1 | Testien luominen ja koodin siistiminen |
-| yht | 32 |  |
+| 3.5. | 1 | Docstringejen luominen |
+|  | 3 | Arkkitehtuurikuvauksen ja käyttöohjeen kirjoittaminen |
+| yht | 36 |  |
