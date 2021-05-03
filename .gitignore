@@ -5,4 +5,5 @@ htmlcov
 /src/__pycache__
 /src/tests/__pycache__
 /src/ui/__pycache__
+/src/services/__pycache__
 .coverage
