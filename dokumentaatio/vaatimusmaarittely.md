@@ -16,7 +16,7 @@ Sovellusta voi käyttää useampi käyttäjä, joilla kaikilla näkyy vain omat 
 - Käyttäjä voi syöttää järjestelmään omat tilitapahtumansa csv-tiedoston avulla [x]
 - Käyttäjä näkee paljonko rahaa hän on saanut ja käyttänyt viime kuukaudessa/vuodessa [x]
 - Käyttäjä näkee paljonko rahaa hänelle on jäänyt yli kuukaudessa [x]
-- Käyttäjä voi kirjautua ulos järjestelmästä
+- Käyttäjä voi kirjautua ulos järjestelmästä [x]
 
 ## Jatkokehitysideoita
 
