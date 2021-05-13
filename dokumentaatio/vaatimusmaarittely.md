@@ -24,7 +24,7 @@ Sovelluksessa on vain yksi käyttäjärooli eli normaali käyttäjä.
 
 - Käyttäjä voi syöttää järjestelmään omat tilitapahtumansa csv-tiedoston avulla
 - Käyttäjä näkee kaikki syötetyt tilitiedot listassa
-- Käyttäjä näkee viime kaikki/kuukauden tulot ja menot
+- Käyttäjä näkee kaikki / viime kuukauden tulot ja menot
 - Käyttäjä näkee paljonko rahaa hänelle on jäänyt yli kuukaudessa
 - Käyttäjä voi lisätä käteistä ja ostoja tilitapahtumiin
 - Käyttäjä voi kirjautua ulos järjestelmästä
