@@ -5,6 +5,7 @@ from ui.add_info_view import AddInfo
 from ui.add_cash_view import AddCash
 from ui.add_cash_purchase import AddCashPurchase
 from ui.remove_user_view import RemoveUserView
+from ui.all_info_view import AllInfoView
 
 class UI:
     def __init__(self, root):
@@ -36,7 +37,7 @@ class UI:
 
     def show_budget_view(self):
         self.hide_current_view()
-        self.current_view = BudgetView(self.root, self.show_login_view, self.show_add_info_view, self.show_add_cash_view, self.show_add_cash_purchase_view)
+        self.current_view = BudgetView(self.root, self.show_login_view, self.show_add_info_view, self.show_add_cash_view, self.show_add_cash_purchase_view, self.show_all_info_view)
         self.current_view.pack()
 
     def show_add_info_view(self):
@@ -52,4 +53,9 @@ class UI:
     def show_add_cash_purchase_view(self):
         self.hide_current_view()
         self.current_view = AddCashPurchase(self.root, self.show_budget_view)
+        self.current_view.pack()
+
+    def show_all_info_view(self):
+        self.hide_current_view()
+        self.current_view = AllInfoView(self.root, self.show_budget_view)
         self.current_view.pack()

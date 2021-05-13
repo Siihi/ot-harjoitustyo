@@ -1,14 +1,16 @@
 from tkinter import ttk, StringVar, constants
+from typing import Text
 from services.service import service
 
 class BudgetView:
-    def __init__(self, root, handle_show_login_view, handle_show_add_info, handle_show_add_cash, handle_show_add_cash_purchase):
+    def __init__(self, root, handle_show_login_view, handle_show_add_info, handle_show_add_cash, handle_show_add_cash_purchase, handle_show_all_info):
         self.root = root
         self.frame = None
         self.handle_show_login_view = handle_show_login_view
         self.handle_show_add_info = handle_show_add_info
         self.handle_show_add_cash = handle_show_add_cash
         self.handle_show_add_cash_purchase = handle_show_add_cash_purchase
+        self.handle_show_all_info = handle_show_all_info
         self.username_entry = None
         self.password_entry = None
         self.trial_entry = None
@@ -68,6 +70,7 @@ class BudgetView:
         add_cash_button = ttk.Button(master=self.frame, text="Lisää käteistä", command=self.handle_show_add_cash)
         add_cash_purchase_button = ttk.Button(master=self.frame, text="Lisää käteisosto", command=self.handle_show_add_cash_purchase)
         logout_button = ttk.Button(master=self.frame, text="Kirjaudu ulos", command=self.logout_handler)
+        all_info_button = ttk.Button(master=self.frame, text="Kaikki tilitiedot", command=self.handle_show_all_info)
 
         heading_label.grid(row=0, column=0, columnspan=2, sticky=constants.W, padx=5, pady=5)
         monthincome_label.grid(row=1, column=0, sticky=constants.W, padx=4, pady=4)
@@ -80,10 +83,10 @@ class BudgetView:
         add_info_button.grid(row=5, column=0, sticky=constants.W, padx=2, pady=4)
         add_cash_button.grid(row=5, column=1, sticky=constants.W, padx=2, pady=4)
         add_cash_purchase_button.grid(row=5, column=2, sticky=constants.W, padx=2, pady=4)
-        logout_button.grid(row=5, column=3, sticky=constants.W, padx=4, pady=4)
+        logout_button.grid(row=5, column=4, sticky=constants.W, padx=4, pady=4)
+        all_info_button.grid(row=5, column=3, sticky=constants.W, padx=4, pady=4)
+
         self.error_label.grid(row=6, column=0, columnspan=2, padx=4, pady=4, sticky=constants.W)
 
-        #list of all info from self.allinfo which is a list
-
         self.hide_error()
-        self.frame.grid_columnconfigure(2, weight=1, minsize=400)
+        self.frame.grid_columnconfigure(6, weight=1, minsize=400)

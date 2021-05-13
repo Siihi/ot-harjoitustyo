@@ -26,6 +26,5 @@ class DataBase:
         self.create_tables(connection)
         self.insert_test_user(connection)
 
-if __name__ == "__main__":
-    db = DataBase()
-    db.initialize_database()
+db = DataBase()
+db.initialize_database()
