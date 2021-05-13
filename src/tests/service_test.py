@@ -12,8 +12,6 @@ class TestService(unittest.TestCase):
         self.service.register("testaus", "testaus")
         self.assertEqual(self.service.login("testaus", "testaus"), None)
         self.service.deleteuser("testaus", "testaus")
-    
-    #def test_login_unsuccessful(self):
 
     def test_logout(self):
         self.assertEqual(self.service.logout(), None)
@@ -22,28 +20,18 @@ class TestService(unittest.TestCase):
         self.assertEqual(self.service.register("testaus", "testaus"), None)
         self.service.deleteuser("testaus", "testaus")
 
-    #def test_register_unsuccessful(self):
-
     def test_deleteuser_successful(self):
         self.service.register("testaus", "testaus")
         self.assertEqual(self.service.deleteuser("testaus", "testaus"), None)
 
-    #def test_deleteuser_unsuccessful(self):
-
     def test_addinfo_successful(self):
         self.assertEqual(self.service.addinfo("testi.csv"), None)
-
-    #def test_addinfo_unsuccessful(self):
 
     def test_addcash_successful(self):
         self.assertEqual(self.service.addcash("10,00"), None)
 
-    #def test_addcash_unsuccessful(self):
-
     def test_addcashpurchase_successful(self):
         self.assertEqual(self.service.addcashpurchase("-10,00", "testi", "30.09.2000"), None)
-
-    #def test_addcashpurchase_unsuccessful(self):
 
     def test_fetchallinfos(self):
         self.assertEqual(self.service.fetchallinfos(), [])
