@@ -5,8 +5,8 @@ def main():
     window = Tk()
     window.title("Budjetointisovellus")
 
-    ui = UI(window)
-    ui.start()
+    ui_ui = UI(window)
+    ui_ui.start()
 
     window.mainloop()
 
