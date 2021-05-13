@@ -20,4 +20,7 @@
 |  | 1 | Testien luominen ja koodin siistiminen |
 | 3.5. | 1 | Docstringejen luominen |
 |  | 3 | Arkkitehtuurikuvauksen ja käyttöohjeen kirjoittaminen |
-| yht | 36 |  |
+| 12.5. | 2 | Docstringejen luominen |
+|  | 1 | Testien luominen |
+| 13.5. | 2 | Dokumentaation lisääminen ja koodin siistiminen |
+| yht | 41 |  |
