@@ -36,4 +36,3 @@ Sovelluksessa on vain yksi käyttäjärooli eli normaali käyttäjä.
 - Tapahtumien piilotus tilastoista
 - Suunnitelmien luominen seuraavalle kuukaudelle aikaisempien tilastojen perusteella
 - Käyttäjätiimit, jotka näkevät yhteiset budjetit
-- 
