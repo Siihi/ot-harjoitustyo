@@ -23,4 +23,5 @@
 | 12.5. | 2 | Docstringejen luominen |
 |  | 1 | Testien luominen |
 | 13.5. | 2 | Dokumentaation lisääminen ja koodin siistiminen |
-| yht | 41 |  |
+| 16.5. | 1 | Dokumentaation päivittäminen |
+| yht | 42 |  |
