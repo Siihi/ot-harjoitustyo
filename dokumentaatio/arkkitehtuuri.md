@@ -37,3 +37,9 @@ Sovellus tallentaa käyttäjä- ja tilitiedot SQLite-tietokantaan tauluihin User
 Kun kirjautumisnäkymään syötetään käyttäjätunnus ja salasana ja klikataan *Kirjaudu sisään*, etenee sovelluksen kontrolli seuraavasti.
 
 ![Kirjautuminen](./kuvat/sekvenssi_kirjautuminen.jpeg)
+
+Kun painiketta painetaan kutsutaan `Service`:n metodia login antaen parametriksi käyttäjätunnuksen ja salasanan. Metodi kutsuu `User`:n metodia login, joka hakee tietokannasta käyttäjän ja tarkistaa onko annettu salasana sama kuin tietokannassa oleva salasana. Jos on, kirjautuminen onnistuu ja palautetaan käyttäjän id. Tämän seurauksena käyttöliittymä vaihtaa näkymäksi `BudgetView`:n eli sovelluksen varsinaisen päänäkymän ja näyttää kirjautuneen käyttäjän tilitietoja.
+
+### Muut toiminnallisuudet 
+
+Sama periaate toistuu sovelluksen kaikissa toiminnallisuuksissa, käyttöliittymä kutsuu sovelluslogiikan metodia ja se päivittää tilitietoja tai käyttäjän tilaa. Palatessa käyttöliittymään päivitetään tilitiedot.
